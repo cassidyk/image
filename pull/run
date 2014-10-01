@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo `date +%s`_ > in/dd/time
+./sshfs.sh
+./factor.sh
+rm in/dd/time
